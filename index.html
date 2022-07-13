@@ -16,7 +16,13 @@
       }
     </style>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-smooth-scroll="true" data-bs-offset="0" tabindex="0">
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-example"
+    data-bs-smooth-scroll="true"
+    data-bs-offset="0"
+    tabindex="0"
+  >
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
@@ -59,160 +65,333 @@
       <a href="#" class="btn btn-light rounded-circle border mt-5"
         ><i class="bi bi-chevron-down"></i
       ></a>
-    <div>
-      <p id="portfolio" class="h1 text-center text-info mt-5 mb-4">My Recent Works</p>
-      <div class="row">
-        <div class="col-4 mb-3">
-          <div class="card ">
-            <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
-            <div class="card-body text-center">
-              <h5 class="h2 card-title mb-2">Multi-Post Stories Gain+Glory</h5>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
-              <a href="#" class="btn btn-success mt-4">See More</a>
+      <div>
+        <p id="portfolio" class="h1 text-center text-info mt-5 mb-4">
+          My Recent Works
+        </p>
+        <div class="row">
+          <div class="col-4 mb-3">
+            <div class="card">
+              <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
+              <div class="card-body text-center">
+                <h5 class="h2 card-title mb-2">
+                  Multi-Post Stories Gain+Glory
+                </h5>
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Ruby on rail</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >CSS</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Javascript</span
+                >
+                <a
+                  href="#"
+                  class="btn btn-success mt-4"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModal"
+                  >See More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Modal Section -->
+          <div
+            class="modal fade"
+            id="projectModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close btn"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body text-start">
+                  <img src="bg-gray.jpg" alt="" class="img-fluid mb-5 rounded"/>
+                  <div class="row">
+                    <div class="col-8">
+                      <h5 class="h2 mb-2">Multi-Post Stories Gain+Glory</h5>
+                    </div>
+                    <div class="col-4">
+                      <a href="#"class="btn btn-success mr-3">
+                        See Live <i class="bi bi-arrow-up-right-circle"></i>
+                      </a>
+                      <a href="#"class="btn btn-success ml-3">
+                        See Sorce <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="mt-3 mb-3">
+                    <span class="bagde text-bg-light text-primary rounded p-2">CodeKit</span>
+                    <span class="bagde text-bg-light text-primary rounded p-2">GitHub</span>
+                    <span class="bagde text-bg-light text-primary rounded p-2">Javascript</span>
+                    <span class="bagde text-bg-light text-primary rounded p-2">Bootstrap</span>
+                    <span class="bagde text-bg-light text-primary rounded p-2">Terminal</span>
+                    <span class="bagde text-bg-light text-primary rounded p-2">CodePen</span>
+                  </div>
+                  <p class="text-justify">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it 1960s with
+                    the releaLorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it 1960s
+                    with the relea
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
+              <div class="card-body text-center">
+                <h5 class="h2 card-title mb-2">
+                  Multi-Post Stories Gain+Glory
+                </h5>
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Ruby on rail</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >CSS</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Javascript</span
+                >
+                <a href="#" class="btn btn-success mt-4"
+                data-bs-toggle="modal"
+                data-bs-target="#projectModal">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
+              <div class="card-body text-center">
+                <h5 class="h2 card-title mb-2">
+                  Multi-Post Stories Gain+Glory
+                </h5>
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Ruby on rail</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >CSS</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Javascript</span
+                >
+                <a href="#" class="btn btn-success mt-4" data-bs-toggle="modal"
+                data-bs-target="#projectModal">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
+              <div class="card-body text-center">
+                <h5 class="h2 card-title mb-2">
+                  Multi-Post Stories Gain+Glory
+                </h5>
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Ruby on rail</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >CSS</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Javascript</span
+                >
+                <a href="#" class="btn btn-success mt-4" data-bs-toggle="modal"
+                data-bs-target="#projectModal">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
+              <div class="card-body text-center">
+                <h5 class="h2 card-title mb-2">
+                  Multi-Post Stories Gain+Glory
+                </h5>
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Ruby on rail</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >CSS</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Javascript</span
+                >
+                <a href="#" class="btn btn-success mt-4" data-bs-toggle="modal"
+                data-bs-target="#projectModal">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
+              <div class="card-body text-center">
+                <h5 class="h2 card-title mb-2">
+                  Multi-Post Stories Gain+Glory
+                </h5>
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Ruby on rail</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >CSS</span
+                >
+                <span class="bagde text-bg-light text-primary rounded p-2"
+                  >Javascript</span
+                >
+                <a href="#" class="btn btn-success mt-4" data-bs-toggle="modal"
+                data-bs-target="#projectModal">See More</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card ">
-            <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
-            <div class="card-body text-center">
-              <h5 class="h2 card-title mb-2">Multi-Post Stories Gain+Glory</h5>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
-              <a href="#" class="btn btn-success mt-4">See More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card ">
-            <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
-            <div class="card-body text-center">
-              <h5 class="h2 card-title mb-2">Multi-Post Stories Gain+Glory</h5>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
-              <a href="#" class="btn btn-success mt-4">See More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card ">
-            <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
-            <div class="card-body text-center">
-              <h5 class="h2 card-title mb-2">Multi-Post Stories Gain+Glory</h5>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
-              <a href="#" class="btn btn-success mt-4">See More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card ">
-            <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
-            <div class="card-body text-center">
-              <h5 class="h2 card-title mb-2">Multi-Post Stories Gain+Glory</h5>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
-              <a href="#" class="btn btn-success mt-4">See More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card ">
-            <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
-            <div class="card-body text-center">
-              <h5 class="h2 card-title mb-2">Multi-Post Stories Gain+Glory</h5>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
-              <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
-              <a href="#" class="btn btn-success mt-4">See More</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="text-center mt-5">
-        <h2 id="about">About me</h2>
-        <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur, distinctio officiis alias rerum autem et corrupti? Voluptatem, accusamus? Expedita dolorem reiciendis officiis eveniet at animi similique aut sed autem.</p>
-        <button class="btn btn-success">Get My Resume</button>
-        <div class="row mt-5">
-          <div class="col-4">
-            <div class="card bg-light">
-              <img src="bg-gray.jpg" alt="Image name" class="card-img-top">
-              <div class="card-body text-center">
-                <h5 class="h2 card-title mb-2">Languages</h5>
-                <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
-                <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
-                <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
-                <a href="#" class="btn btn-success mt-4">See More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card bg-light">
-              <img src="bg-gray.jpg" alt="Image name" class="card-img-top">
-              <div class="card-body text-center">
-                <h5 class="h2 card-title mb-2">Frameworks</h5>
-                <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
-                <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
-                <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
-                <a href="#" class="btn btn-success mt-4">See More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card bg-light">
-              <img src="bg-gray.jpg" alt="Image name" class="card-img-top">
-              <div class="card-body text-center">
-                <h5 class="h2 card-title mb-2">Skills</h5>
-                <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
-                <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
-                <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
-                <a href="#" class="btn btn-success mt-4">See More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="contact" class="d-flex mt-5">
-          <p class="w-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi autem consectetur in consequatur veniam, perspiciatis labore reiciendis cupiditate possimus blanditiis repellendus ea. Quaerat molestias assumenda porro atque possimus rem aliquid!
+        <div class="text-center mt-5">
+          <h2 id="about">About me</h2>
+          <p class="text-gray">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            consequuntur, distinctio officiis alias rerum autem et corrupti?
+            Voluptatem, accusamus? Expedita dolorem reiciendis officiis eveniet
+            at animi similique aut sed autem.
           </p>
-          <form class="row">
-            <div class="col-12 m-2">
-              <input class="form-control" type="text" placeholder="First Name" aria-label="first name">
+          <button class="btn btn-success">Get My Resume</button>
+          <div class="row mt-5">
+            <div class="col-4">
+              <div class="card bg-light">
+                <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
+                <div class="card-body text-center">
+                  <h5 class="h2 card-title mb-2">Languages</h5>
+                  <span class="bagde text-bg-light text-primary rounded p-2"
+                    >Ruby on rail</span
+                  >
+                  <span class="bagde text-bg-light text-primary rounded p-2"
+                    >CSS</span
+                  >
+                  <span class="bagde text-bg-light text-primary rounded p-2"
+                    >Javascript</span
+                  >
+                  <a href="#" class="btn btn-success mt-4" data-bs-toggle="modal"
+                  data-bs-target="#projectModal">See More</a>
+                </div>
+              </div>
             </div>
-            <div class="col-12 m-2">
-              <input class="form-control" type="text" placeholder="Email" aria-label="email">
+            <div class="col-4">
+              <div class="card bg-light">
+                <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
+                <div class="card-body text-center">
+                  <h5 class="h2 card-title mb-2">Frameworks</h5>
+                  <span class="bagde text-bg-light text-primary rounded p-2"
+                    >Ruby on rail</span
+                  >
+                  <span class="bagde text-bg-light text-primary rounded p-2"
+                    >CSS</span
+                  >
+                  <span class="bagde text-bg-light text-primary rounded p-2"
+                    >Javascript</span
+                  >
+                  <a href="#" class="btn btn-success mt-4" data-bs-toggle="modal"
+                  data-bs-target="#projectModal">See More</a>
+                </div>
+              </div>
             </div>
-            <div class="col-12 m-2">
-              <textarea class="form-control" type="text" placeholder="Enter Message" aria-label="messages"></textarea>
+            <div class="col-4">
+              <div class="card bg-light">
+                <img src="bg-gray.jpg" alt="Image name" class="card-img-top" />
+                <div class="card-body text-center">
+                  <h5 class="h2 card-title mb-2">Skills</h5>
+                  <span class="bagde text-bg-light text-primary rounded p-2"
+                    >Ruby on rail</span
+                  >
+                  <span class="bagde text-bg-light text-primary rounded p-2"
+                    >CSS</span
+                  >
+                  <span class="bagde text-bg-light text-primary rounded p-2"
+                    >Javascript</span
+                  >
+                  <a href="#" class="btn btn-success mt-4" data-bs-toggle="modal"
+                  data-bs-target="#projectModal">See More</a>
+                </div>
+              </div>
             </div>
-            <div class="col-3 m-2">
-              <button type="submit" class="btn btn-success">Get In Touch</button>
-            </div>
+          </div>
 
-          </form>
+          <div id="contact" class="d-flex mt-5">
+            <p class="w-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              autem consectetur in consequatur veniam, perspiciatis labore
+              reiciendis cupiditate possimus blanditiis repellendus ea. Quaerat
+              molestias assumenda porro atque possimus rem aliquid!
+            </p>
+            <form class="row">
+              <div class="col-12 m-2">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="First Name"
+                  aria-label="first name"
+                />
+              </div>
+              <div class="col-12 m-2">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Email"
+                  aria-label="email"
+                />
+              </div>
+              <div class="col-12 m-2">
+                <textarea
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter Message"
+                  aria-label="messages"
+                ></textarea>
+              </div>
+              <div class="col-3 m-2">
+                <button type="submit" class="btn btn-success">
+                  Get In Touch
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <footer>
+            <ul
+              class="list-group list-group-horizontal justify-content-center mt-5"
+            >
+              <li class="list-group-item border-0">
+                <i class="bi bi-twitter"></i>
+              </li>
+              <li class="list-group-item border-0">
+                <i class="bi bi-facebook"></i>
+              </li>
+              <li class="list-group-item border-0">
+                <i class="bi bi-linkedin"></i>
+              </li>
+              <li class="list-group-item border-0">
+                <i class="bi bi-instagram"></i>
+              </li>
+              <li class="list-group-item border-0">
+                <i class="bi bi-github"></i>
+              </li>
+            </ul>
+          </footer>
         </div>
-
-        <footer>
-          <ul class="list-group list-group-horizontal justify-content-center mt-5">
-            <li class="list-group-item border-0"><i class="bi bi-twitter"></i></li>
-            <li class="list-group-item border-0"><i class="bi bi-facebook"></i></li>
-            <li class="list-group-item border-0"><i class="bi bi-linkedin"></i></li>
-            <li class="list-group-item border-0">
-              <i class="bi bi-instagram"></i>
-            </li>
-            <li class="list-group-item border-0"><i class="bi bi-github"></i></li>
-          </ul>
-        </footer>
       </div>
-    </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
