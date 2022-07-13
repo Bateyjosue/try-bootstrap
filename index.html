@@ -10,30 +10,36 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <style>
+      .active {
+        background-color: lightblue;
+      }
+    </style>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-smooth-scroll="true" data-bs-offset="0" tabindex="0">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
-    <div class="navbar">
+    <div class="navbar fixed-top bg-light text-dark">
       <div class="container-fluid">
         <a href="" class="logo">JB</a>
-        <ul class="nav mx-auto text-dark">
+        <ul class="nav mx-auto text-dark" id="navbar-example">
           <li class="nav-item">
-            <a href="" class="nav-link">Portfolio</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">contact</a>
+            <a href="#contact" class="nav-link">contact</a>
           </li>
         </ul>
       </div>
     </div>
-    <div class="container text-center w-50">
-      <p class="h1 mt-5 text-primary">Hey there. I'm Josh</p>
+
+    <div class="container text-center scrollspy-example">
+      <p class="h1 mt-5 pt-5 text-primary">Hey there. I'm Josh</p>
       <p class="h2 mt-3 text-success">I'm a software developer</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
@@ -53,9 +59,8 @@
       <a href="#" class="btn btn-light rounded-circle border mt-5"
         ><i class="bi bi-chevron-down"></i
       ></a>
-    </div>
-    <div class="container">
-      <p class="h1 text-center text-info mt-5 mb-4">My Recent Works</p>
+    <div>
+      <p id="portfolio" class="h1 text-center text-info mt-5 mb-4">My Recent Works</p>
       <div class="row">
         <div class="col-4 mb-3">
           <div class="card ">
@@ -130,6 +135,84 @@
           </div>
         </div>
       </div>
+
+      <div class="text-center mt-5">
+        <h2 id="about">About me</h2>
+        <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur, distinctio officiis alias rerum autem et corrupti? Voluptatem, accusamus? Expedita dolorem reiciendis officiis eveniet at animi similique aut sed autem.</p>
+        <button class="btn btn-success">Get My Resume</button>
+        <div class="row mt-5">
+          <div class="col-4">
+            <div class="card bg-light">
+              <img src="bg-gray.jpg" alt="Image name" class="card-img-top">
+              <div class="card-body text-center">
+                <h5 class="h2 card-title mb-2">Languages</h5>
+                <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
+                <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
+                <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
+                <a href="#" class="btn btn-success mt-4">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card bg-light">
+              <img src="bg-gray.jpg" alt="Image name" class="card-img-top">
+              <div class="card-body text-center">
+                <h5 class="h2 card-title mb-2">Frameworks</h5>
+                <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
+                <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
+                <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
+                <a href="#" class="btn btn-success mt-4">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card bg-light">
+              <img src="bg-gray.jpg" alt="Image name" class="card-img-top">
+              <div class="card-body text-center">
+                <h5 class="h2 card-title mb-2">Skills</h5>
+                <span class="bagde text-bg-light text-primary rounded p-2 ">Ruby on rail</span>
+                <span class="bagde text-bg-light text-primary rounded p-2 ">CSS</span>
+                <span class="bagde text-bg-light text-primary rounded p-2 ">Javascript</span>
+                <a href="#" class="btn btn-success mt-4">See More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact" class="d-flex mt-5">
+          <p class="w-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi autem consectetur in consequatur veniam, perspiciatis labore reiciendis cupiditate possimus blanditiis repellendus ea. Quaerat molestias assumenda porro atque possimus rem aliquid!
+          </p>
+          <form class="row">
+            <div class="col-12 m-2">
+              <input class="form-control" type="text" placeholder="First Name" aria-label="first name">
+            </div>
+            <div class="col-12 m-2">
+              <input class="form-control" type="text" placeholder="Email" aria-label="email">
+            </div>
+            <div class="col-12 m-2">
+              <textarea class="form-control" type="text" placeholder="Enter Message" aria-label="messages"></textarea>
+            </div>
+            <div class="col-3 m-2">
+              <button type="submit" class="btn btn-success">Get In Touch</button>
+            </div>
+
+          </form>
+        </div>
+
+        <footer>
+          <ul class="list-group list-group-horizontal justify-content-center mt-5">
+            <li class="list-group-item border-0"><i class="bi bi-twitter"></i></li>
+            <li class="list-group-item border-0"><i class="bi bi-facebook"></i></li>
+            <li class="list-group-item border-0"><i class="bi bi-linkedin"></i></li>
+            <li class="list-group-item border-0">
+              <i class="bi bi-instagram"></i>
+            </li>
+            <li class="list-group-item border-0"><i class="bi bi-github"></i></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
